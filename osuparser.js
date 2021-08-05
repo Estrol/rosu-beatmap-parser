@@ -54,7 +54,7 @@ function parseBeatmap() {
     var sectionRegex = /^\[([a-zA-Z0-9]+)\]$/
 
     var parseGeneral = function(line) {
-        var itr = generalLines[i]
+        var itr = line
 
         var parsed = itr.split(":")
         if (parsed.length == 1) return;
@@ -110,7 +110,7 @@ function parseBeatmap() {
     }
 
     var parseMetadata = function(line) {
-        var itr = metadataLines[i]
+        var itr = line
 
         var parsed = itr.split(":")
         if (parsed.length == 1) return;
@@ -162,7 +162,7 @@ function parseBeatmap() {
     }
 
     var parseDifficulty = function(line) {
-        var itr = metadataLines[i]
+        var itr = line
 
         var parsed = itr.split(":")
         if (parsed.length == 1) return;
