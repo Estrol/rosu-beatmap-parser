@@ -273,7 +273,7 @@ function parseBeatmap() {
 }
 
 module.export("osuparser", {
-    parseContent = function(contents) {
+    parseContent: function(contents) {
         var result = parseBeatmap();
         contents.toString().split(/[\n\r]+/).forEach(function (line) {
             result.parse(line)
