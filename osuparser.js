@@ -57,7 +57,7 @@ function parseBeatmap() {
         var itr = generalLines[i]
 
         var parsed = itr.split(":")
-        if (parsed.length == 1) continue;
+        if (parsed.length == 1) return;
 
         var arg = parsed[1].trim()
 
@@ -113,7 +113,7 @@ function parseBeatmap() {
         var itr = metadataLines[i]
 
         var parsed = itr.split(":")
-        if (parsed.length == 1) continue;
+        if (parsed.length == 1) return;
 
         var arg = parsed[1].trim()
 
@@ -165,7 +165,7 @@ function parseBeatmap() {
         var itr = metadataLines[i]
 
         var parsed = itr.split(":")
-        if (parsed.length == 1) continue;
+        if (parsed.length == 1) return;
 
         var arg = parsed[1].trim()
 
