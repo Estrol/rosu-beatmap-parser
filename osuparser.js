@@ -279,6 +279,7 @@ module.export("osuparser", {
             result.parse(line)
         })
 
+        result.build()
         return result.beatmap;
     }
 })
