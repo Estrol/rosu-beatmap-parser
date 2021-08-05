@@ -6,8 +6,6 @@
 
 "use-strict";
 
-var slider_calc = module.require('slider-calc');
-
 function parseBeatmap() {
     var beatmap = {
         version: "",
